@@ -1,0 +1,15 @@
+<%-include('header')-%>
+<body>
+  
+  <div class="container-fluid">
+    <div class="center text-center text-light ">
+      <h1 >Welcome to HomePage</h1>
+      <h2 ><%=locals.user?user:"user"%></h2>
+      <br />
+      <a href="/route/logout"
+        ><button type="button" class="btn btn-primary">Logout</button></a
+      >
+    </div>
+  </div>
+  <%-include('footer')-%>
+</body>
